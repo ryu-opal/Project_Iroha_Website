@@ -3,9 +3,10 @@ body, html {
     font-family: "LINE Seed JP";
     font-weight: 400;
     font-style: normal;
-    margin: 0;
-    padding: 0;
     height: 300vh;  
+    padding: 0; 
+    margin: 0; 
+
 }
 
 .main-background{ 
@@ -22,73 +23,38 @@ body, html {
     top: 0; 
     width: 100%; 
     height: 60px; 
+    /* padding-bottom: 5px;  */
     background-color: transparent; 
     z-index: 100; 
-}
-
-.introduce-screen{ 
-    display: block; 
-    margin-top: 60px; 
-    height: 100vh; 
-    width: 100%; 
-    overflow: hidden; 
-    position: relative;
-}
-
-.iroha-kodi-main{ 
-    display: flex; 
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%; 
-    justify-content: center; 
-    align-items: center; 
-}
-
-.iroha-kodi-main img{  
-    display: block; 
-    width: 85%; 
-    height: auto; 
-    max-width: 2100px; 
-    padding-top: 15%; 
-    margin: 0; 
-}
-
-.iroha-kodi-main-title1 { 
-    position: absolute; 
-    color: #21647d;
-    top: 30%; 
-    left: 25%; 
-    font-size: 6rem; 
-    transform: translate(-50%, -50%); 
 } 
 
-.iroha-kodi-main-title2 { 
-    position: absolute; 
-    color: #21647d;
-    top: 32%; 
-    left: 72%; 
-    font-size: 6rem; 
-    transform: translate(-50%, -50%); 
+.main-pages{ 
+    display: flex;
+    height: calc(100vh - 60px); 
+    width: 100%; 
+    margin-top: 60px; 
+    overflow: hidden; 
+    
 }
 
-.boarder-text { 
-    position: absolute; 
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 400;
-    font-style: normal; 
-    display: inline-block; 
-    width: fit-content;
-    background-color: #ff6459;
-    color: white;  
-    letter-spacing: 3px; 
-    font-size: 10rem;  
-    text-shadow: none; 
-    margin: 0; 
-    line-height: 0.73; 
+.iroha-container{ 
+    display: flex; 
+    position: relative;
+    width: 100%; 
+    height: 100%;
     padding: 0; 
-    vertical-align: middle; 
-    padding-bottom: 16px; 
-    margin-top: -30px; 
+    margin: 0; 
+}
+
+.iroha-container img{ 
+    position: absolute; 
+    width: 75%; 
+    margin-left: -13%; 
+    margin-top: -10%; 
+} 
+
+.iroha-container h1{ 
+    align-self: center; 
+    margin-left: 80%; 
+    
 } 
