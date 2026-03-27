@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://ryu-opal.github.io/project-iroha
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -60,7 +60,7 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: '/blog/ '
   per_page: 10
   order_by: -date
 
@@ -101,4 +101,9 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git' 
+  repo: https://github.com/ryu-opal/Project_Iroha_Personal_Website.git
+  branch: main
+  message: "update Blog"
+
+
