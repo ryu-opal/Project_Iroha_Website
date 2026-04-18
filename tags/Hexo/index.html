@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tag: Hexo | Project Iroha</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Project Iroha">
+<meta property="og:url" content="https://ryu-opal.github.io/tags/Hexo/index.html">
+<meta property="og:site_name" content="Project Iroha">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Kodi Lui">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Project Iroha" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/image/icon.ico">
+  
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet"> 
+
+  
+  
+  <!-- 這是載入你的 css/style.css 的 Hexo 專屬寫法喔！ -->
+  
+<link rel="stylesheet" href="/css/iroha_style.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+<body class="layout-layout-background">
+  <header class="main-header"> 
+    <!-- 點擊 Logo 自動回到首頁的魔法！ -->
+    <a href="/" class="header-icon"> 
+        <h1>Project</h1> 
+        <!-- 圖片路徑也換成 Hexo 專屬的寫法囉！ -->
+        <img src="/image/icon_play.svg" alt="header-icon-design"> 
+        <h1>Iroha</h1> 
+    </a>
+    
+    <!-- 讓選單變成全自動的魔法！ -->
+    <nav class="header-tabs"> 
+        
+            <a href="/">HOME</a>
+        
+            <a href="/archives">BLOGS</a>
+        
+            <a href="/tools">TOOLS</a>
+        
+    </nav>
+</header>
+
+  <div class="layout-layout-content">
+    <div class="layout-tag">
+    <h1 class="LT-main-title">🏷️ 目前標籤：<span>Hexo</span></h1>
+
+    <!-- 2. 開始把文章寶寶們一張一張列出來 (迴圈魔法) -->
+    <div class="LT-postlist">
+        
+            <!-- 這裡換成你想要的 tag-post-link 囉！ -->
+            <a href="/2026/03/31/hello-world/" class="LT-postlink">
+                <article>
+                    <h2 class="LT-post-title">Hello World</h2>
+                    <span class="LT-post-date">2026-03-31</span> 
+                    <p class="LT-post-blurb">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pro...</p>
+                </article>
+            </a>
+        
+    </div>
+</div> 
+  </div>
+  <div class="footer-container"> 
+    <div class="footer-container-img"></div>
+    <footer class="footer">
+        
+        <div class="outer">
+            <div id="footer-info" class="inner">
+                &copy; 2026 Kodi Lui<br> 
+
+            </div>
+        </div>
+    </footer>
+</div>
+  <!-- 1. 先引入 jQuery -->
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+<!-- 2. 再加入複製按鈕的邏輯 -->
+<script>
+  console.log("複製按鈕代碼開始執行...");
+  window.addEventListener("load", function() {
+    var blocks = document.querySelectorAll('figure.highlight');
+    console.log("找到 " + blocks.length + " 個程式碼區塊");
+    
+    blocks.forEach(function(block) {
+      block.style.position = 'relative';
+      var btn = document.createElement('button');
+      btn.className = 'copy-btn';
+      btn.innerText = 'Copy';
+      block.appendChild(btn);
+      
+      btn.addEventListener('click', function() {
+        var code = block.querySelector('td.code').innerText;
+        navigator.clipboard.writeText(code).then(function() {
+          btn.innerText = 'Copied!';
+          setTimeout(function() { btn.innerText = 'Copy'; }, 2000);
+        });
+      });
+    });
+  });
+</script>
+  
+<script src="/js/script.js"></script>
+
+</body>
+</html> 
