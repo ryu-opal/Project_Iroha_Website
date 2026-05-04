@@ -21,7 +21,7 @@ body, html {
     background-size: 52px, 52px; 
 }
 
-.outer{ 
+.partial-footer-outer{ 
     display: flex; 
     align-items: flex-end; 
     justify-content: flex-end; 
@@ -30,7 +30,7 @@ body, html {
     
 }
 
-.inner{ 
+.partial-footer-inner{ 
 
     color: white; 
     display: flex; 
@@ -39,7 +39,7 @@ body, html {
     padding: 20px; 
 }
 
-.main-header{ 
+.partial-header{ 
     position: fixed; 
     top: 0; 
     width: 100%; 
@@ -56,7 +56,7 @@ body, html {
 
 }  
 
-.main-header::after{ 
+.partial-header::after{ 
     content: ""; 
     position: absolute; 
     bottom: -2px; 
@@ -70,7 +70,7 @@ body, html {
 }
 
 
-.header-icon{ 
+.partial-header-icon-design{ 
     display: inline; 
     text-decoration: none; 
     color: inherit;  
@@ -84,7 +84,20 @@ body, html {
 
 }
 
-.header-tabs{ 
+.partial-header-icon-design h1{ 
+    margin: 0; 
+    padding-left: 10px; 
+    padding-right: 10px;  
+
+}
+
+.partial-header-icon-design img{ 
+    width: 44px;   
+    height: auto; 
+
+}
+
+.partial-header-tabs{ 
     display: flex; 
     align-items: center; 
     margin-left: auto; 
@@ -94,7 +107,7 @@ body, html {
 
 }
 
-.header-tabs a{ 
+.partial-header-tabs a{ 
     user-select: none; 
     text-decoration: none; 
     color: inherit; 
@@ -103,20 +116,7 @@ body, html {
     margin-left: 50px; 
     margin-right: 50px; 
 
-}
-
-.header-icon h1{ 
-    margin: 0; 
-    padding-left: 10px; 
-    padding-right: 10px;  
-
-}
-
-.header-icon img{ 
-    width: 44px;   
-    height: auto; 
-
-}
+} 
 
 .layout-index-cover{ 
     display: flex;
@@ -184,19 +184,19 @@ body, html {
 
 }
 
-.footer-container{ 
+.partial-footer-container{ 
     width: 100%; 
 
 }
 
-.footer-container-img{ 
+.partial-footer-container-img{ 
     width: 100%; 
     height: 110px; 
     margin-bottom: -5px;
     background-image: url(../image/footer_design.svg);
 }
 
-.footer{ 
+.partial-footer{ 
     bottom: 0; 
     width: 100%; 
     height: 435px; 
@@ -205,11 +205,11 @@ body, html {
 } 
 
 .layout-index-blogpost{  
-    display: grid; 
+    
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  
     gap: 20px; 
+    text-align: center; 
 
-    height: 300px; 
     margin-top: 50px; 
     padding-left: 10px; 
     padding-right: 20px; 
@@ -217,27 +217,68 @@ body, html {
 
 } 
 
+.LIB-h1{ 
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 20px; 
+
+}
+
+
+.LIB-post{ 
+    /* display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+    display: flex;          
+    flex-wrap: wrap;   
+    justify-content: center; 
+    gap: 20px;
+    align-items: stretch; 
+}
+
 /* 2. 重點在這裡！把寬度、顏色、圓角都交給 a 標籤 (.post-link) */
 .LIB-box{
+    width: 400px; 
+    height: 200px; 
+
+
     text-decoration: none;
     color: inherit;
     display: block; /* 這個很重要！讓超連結變成一個乖乖的方塊 */
-    height: 100%; /* 讓並排的卡片都一樣高 */
+    
     box-sizing: border-box;
-
-    /* 把漂亮的衣服搬到這裡來囉～✨ */
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s; 
-
+    text-align: center; 
 } 
 
 .LIB-box:hover{ 
     transform: translateY(-5px); 
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); 
+}
 
+.LIB-box-content{ 
+    display: flex; 
+    height: 100%; 
+    width: 100%; 
+
+}
+
+.LIB-box-img{ 
+    width: auto; 
+    height: 100%; 
+    object-fit: cover; 
+    
+}
+
+.LIB-box-word{ 
+    display: flex; 
+    justify-content: left; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 5px; 
+    
 }
 
 .LIB-title{ 
